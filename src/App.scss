@@ -1,0 +1,17 @@
+@import './styles/_colors.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background: $primary-color;
+}
+
+html,
+body,
+ul,
+ol {
+    margin:  0;
+    padding: 0;
+}

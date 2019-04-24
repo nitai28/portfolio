@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url("/fonts/OpenSans.ttf") ;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("/fonts/OpenSans-Bold.ttf") ;
+}
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("/fonts/Lovelo-LineLight.ttf") ;
+}
+
+$primary-font:'OpenSans';
+$bold-font: "OpenSansBold";
+$main-headline-font:"Lovelo";
