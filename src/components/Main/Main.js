@@ -1,4 +1,5 @@
 import React from 'react';
+import Projects from'../Projects/Projects'
 import './Main.scss';
 
 class Main extends React.Component {
@@ -41,7 +42,10 @@ class Main extends React.Component {
                             knowledge with <span className="green-txt">MongoDB</span> and <span className="green-txt">SQL</span>. </p>
                     </div>
                 </div>
+                <div className="projects">
 
+                </div>
+                <Projects/>
             </div>
         )
 

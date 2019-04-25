@@ -27,13 +27,13 @@ class Header extends React.Component {
     render() {
 
         return (
-            <div className="header" >
+            <div className="header">
                 <div className="bg"/>
-                <nav  className={this.state.navClass}>
+                <nav className={this.state.navClass}>
                     <ul className="nav-list">
-                        <li>About me</li>
-                        <li>Contact</li>
                         <li>Projects</li>
+                        <li>About</li>
+                        <li>Contact</li>
                     </ul>
                 </nav>
                 <div className="profile-info">
@@ -42,9 +42,9 @@ class Header extends React.Component {
                     <div className="profile-name">Nitai Shavit</div>
                     <div className="profile-des">Full Stack Web Developer</div>
                     {/*<ul className="contacts-list">*/}
-                        {/*<li></li>*/}
-                        {/*<li></li>*/}
-                        {/*<li></li>*/}
+                    {/*<li></li>*/}
+                    {/*<li></li>*/}
+                    {/*<li></li>*/}
                     {/*</ul>*/}
                 </div>
 

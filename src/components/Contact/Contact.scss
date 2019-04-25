@@ -1,0 +1,59 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.Contact {
+  width: 100%;
+  background: black;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .contact-info {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .profile-img {
+    margin-bottom: 15px;
+    width: 150px;
+    border-radius: 50%;
+    border: #5E7A8C 3px solid;
+  }
+  ul {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    li {
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+
+.icon {
+  width: 30px;
+}
+
+.git:hover {
+  background: #a9bbb9;
+}
+
+.mail:hover {
+  background: #c24e47;
+}
+
+.linkedin:hover {
+  background: #0077B5;
+}
+.contact-desc {
+  width: 60%;
+  font-family:$primary-font ;
+  font-size: 1.4rem;
+  color: white;
+}

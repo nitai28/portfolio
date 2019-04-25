@@ -48,9 +48,10 @@
 }
 
 .logo-box {
-  width: 120px;
+  width: 7.81vw;
   height: 120px;
   background: #1a3938;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,20 +59,20 @@
     background: #748d8e;
   }
   div {
-    width: 100px;
+    width: 6.51vw;
     height: 100px;
 
   }
   .html {
-    background: url("../../assets/skills/logo-html.png");
+    background: url("../../assets/skills/logo-html.png") no-repeat center;
     background-size: contain;
   }
   .css {
-    background: url("../../assets/skills/css.png");
+    background: url("../../assets/skills/css.png") no-repeat center;
     background-size: contain;
   }
   .js {
-    background: url("../../assets/skills/js-logo.png");
+    background: url("../../assets/skills/js-logo.png") no-repeat center;
     background-size: contain;
   }
   .vue {

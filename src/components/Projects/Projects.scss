@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.project {
+  font-family: $primary-font;
+  text-align: center;
+  color: white;
+  background: #5e7a8b;
+  //background: linear-gradient(140deg,#000000, #1a3938);
+  margin-top: -250px;
+  padding-top: 150px;
+  h1 {
+    font-family: $bold-font;
+    font-size: 4.5rem;
+  }
+}
+
+.project-container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width:1000px ) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+Card{
+  @media (max-width:1000px ) {
+    margin-bottom: 20px;
+  }
+}
