@@ -3,7 +3,7 @@
 
 .Contact {
   width: 100%;
-  background: black;
+  background: linear-gradient(140deg, #000000, #1a3938);
   height: 300px;
   display: flex;
   align-items: center;
@@ -30,8 +30,8 @@
     justify-content: space-around;
     list-style: none;
     li {
-      border-radius: 50%;
-      background: white;
+      width: 30px;
+      height: 30px;
     }
   }
 }
@@ -40,20 +40,9 @@
   width: 30px;
 }
 
-.git:hover {
-  background: #a9bbb9;
-}
-
-.mail:hover {
-  background: #c24e47;
-}
-
-.linkedin:hover {
-  background: #0077B5;
-}
 .contact-desc {
   width: 60%;
-  font-family:$primary-font ;
+  font-family: $primary-font;
   font-size: 1.4rem;
   color: white;
 }

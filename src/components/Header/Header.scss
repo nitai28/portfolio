@@ -1,5 +1,7 @@
 @import '../../styles/colors';
 @import '../../styles/fonts';
+@import "../../styles/flex-mixins";
+@import "../../styles/mixins";
 
 .header {
   height: 600px;
@@ -10,22 +12,51 @@
   font-family: $primary-font;
   color: white;
 
-
   .nav-list {
     position: fixed;
     width: 100%;
     padding-top: 30px;
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+    @include flex-display-justify-align(center);
     text-shadow: 1px 1px 1px #000000;
     font-size: 1.5rem;
+    li {
+      margin-right: 15vw;
+      a {
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+        }
+        &:active {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    li:first-child {
+      img {
+        height: 150px;
+        position: absolute;
+        top: -32px;
+        left: 45px;
+      }
+
+    }
   }
   .nav-scroll {
     position: fixed;
-    height: 80px;
-    background: $header-color;
-    width: 100%;
+    @include widthHeight(100%, 80px);
+    background: #3c505d;
+    ul {
+      padding: 0;
+    }
+    li:first-child {
+      img {
+        top: -58px;
+      }
+    }
+    @include flex-display-justify-align(null, center);
   }
   .bg {
     background: url("../../assets/3.jpg") no-repeat center;
@@ -39,14 +70,12 @@
     right: 0;
   }
   .profile-info {
-    height: 100%;
-    width: 100%;
+    @include widthHeight();
     padding-top: 80px;
 
     .profile-im {
       margin: 30px auto 15px;
-      width: 150px;
-      height: 150px;
+      @include widthHeight(150px, 150px);
       background: url("../../assets/developer_avatar.png");
       border-radius: 50%;
       background-size: contain;
@@ -63,5 +92,7 @@
 
   }
 }
+
+
 
 

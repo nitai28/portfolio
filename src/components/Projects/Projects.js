@@ -6,7 +6,7 @@ import './Projects.scss'
 class Projects extends React.Component {
     render() {
         return (
-            <div className="project">
+            <div id="projects"  className="project">
                 <h1>Projects</h1>
                 <div className="project-container">
                     <Card

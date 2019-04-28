@@ -8,24 +8,24 @@ import './Contact.scss'
 class Contact extends React.Component {
     render() {
         return (
-            <div className="Contact">
+            <div id="contact" className="Contact">
                 <div className="contact-info">
                     <Image className="profile-img" src="/img/0.jpg" roundedCircle/>
                     <ul>
                         <li className="git icon">
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/nitai28">
-                                <img src="/icons/git.svg" alt=""/>
+                                <img src="/icons/11.svg" alt=""/>
                             </a>
                         </li>
                         <li className="mail icon">
-                            <a target="_blank" rel="noopener noreferrer" href="mailto:nitai230@gmail.com">
-                                <img src="/icons/gmail.svg" alt=""/>
+                            <a  href="mailto:nitai230@gmail.com">
+                                <img src="/icons/22.svg" alt=""/>
                             </a>
                         </li>
                         <li className="linkedin icon">
                             <a target="_blank" rel="noopener noreferrer"
                                href="https://www.linkedin.com/in/nitai-shavit/">
-                                <img src="/icons/linkedin1.svg" alt=""/>
+                                <img src="/icons/3.svg" alt=""/>
                             </a>
                         </li>
                     </ul>

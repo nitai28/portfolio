@@ -19,7 +19,7 @@ class Header extends React.Component {
     };
 
     handleScroll(event) {
-        if (window.scrollY > 200)
+        if (window.scrollY > 0)
             this.setState({navClass: 'nav-scroll'});
         else this.setState({navClass: null});
     };
@@ -27,13 +27,16 @@ class Header extends React.Component {
     render() {
 
         return (
-            <div className="header">
+            <div id="home" className="header">
                 <div className="bg"/>
                 <nav className={this.state.navClass}>
                     <ul className="nav-list">
-                        <li>Projects</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li>
+                            <img src="/img/logo.png " alt=""/>
+                        </li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div className="profile-info">

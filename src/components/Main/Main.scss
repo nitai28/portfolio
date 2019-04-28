@@ -1,67 +1,55 @@
 @import '../../styles/colors';
 @import '../../styles/fonts';
+@import "../../styles/flex-mixins";
+@import "../../styles/mixins";
 
 .top-main {
   color: white;
-  height: 650px;
-  width: 100%;
+  @include widthHeight(100%, 650px);
   clip-path: polygon(100% 0%, 100% 63%, 0% 78%, 0% 0%);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: linear-gradient(140deg, #1a3938,#000000);
-  //background: #425157;
+  @include flex-display-justify-align(space-around, center);
+  background: linear-gradient(140deg, #1a3938, #000000);
   .skill-list {
     padding-bottom: 100px;
     margin-bottom: 80px;
-    width: 30%;
-    height: 60%;
-    display: flex;
+    @include widthHeight(30%, 60%);
+    @include flex-display-justify-align(space-around,null);
     flex-wrap: wrap;
-    justify-content: space-around;
   }
   .skills-info {
     align-self: flex-start;
     margin-top: 50px;
-    width: 60%;
-    height: 350px;
+    @include widthHeight(60%,350px);
+    @include flex-display-justify-align(flex-start,center);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     .skills-headline {
       margin-bottom: 25px;
       font-size: 4rem;
       letter-spacing: 3.5px;
       font-family: $bold-font;
     }
-    .skills-description{
+    .skills-description {
       width: 80%;
       font-size: 1.3rem;
       line-height: 1.6;
-      .green-txt{
+      .green-txt {
         color: #62c8ad;
       }
     }
   }
-
 }
 
 .logo-box {
-  width: 7.81vw;
-  height: 120px;
+  @include widthHeight(7.81vw,120px);
   background: #1a3938;
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-display-justify-align(center,center);
   &:nth-child(odd) {
     background: #748d8e;
   }
   div {
-    width: 6.51vw;
-    height: 100px;
-
+    @include widthHeight(6.51vw,100%);
   }
   .html {
     background: url("../../assets/skills/logo-html.png") no-repeat center;
